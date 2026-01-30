@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="15html.html" class="logo">Portfolio.</a>
+      <nav class="navbar">
+        <a href="15html.html">Home</a>
+        <a href="skil.html">Skills</a>
+        <a href="achi.html">Achievements</a>
+        <a href="about.html">About</a>
+        <a href="conta.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="page skills">
+      <h1>Skills</h1>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img src="C:\\Users\\goudp\\Downloads\\i4.webp" alt="HTML" />
+        </div>
+        <div class="skill-item">
+          <img src="C:\\Users\\goudp\\Downloads\\i3.png" alt="CSS" />
+        </div>
+        <div class="skill-item">
+          <img src="C:\\Users\\goudp\\Downloads\\i2.png" alt="JavaScript" />
+        </div>
+        <div class="skill-item">
+          <img src="C:\\Users\\goudp\\Downloads\\i6.jpg" alt="React" />
+        </div>
+        <div class="skill-item">
+          <img src="C:\\Users\\goudp\\Downloads\\i1.png" alt="Node.js" />
+        </div>
+        <div class="skill-item">
+          <img src="C:\\Users\\goudp\\Downloads\\i5.png" alt="MongoDB" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const file = (
+        location.pathname.split("/").pop() || "15html.html"
+      ).toLowerCase();
+      document.querySelectorAll(".navbar a").forEach((a) => {
+        if (a.getAttribute("href").toLowerCase() === file) {
+          a.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

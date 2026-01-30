@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="home-page">
+    <header class="header">
+      <a href="15html.html" class="logo">Portfolio.</a>
+      <nav class="navbar">
+        <a href="15html.html">Home</a>
+        <a href="skil.html">Skills</a>
+        <a href="achi.html">Achievements</a>
+        <a href="about.html">About</a>
+        <a href="conta.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="intro">
+        <h1>Hi, I'm Arjun</h1>
+        <h3>Fullstack Developer</h3>
+        <p>
+          Aspiring Full Stack Developer worked in MERN web aplications ,
+          Passionate about building real-world, user-focused applications.
+        </p>
+        <div class="btn-box">
+          <a class="btn" href="conta.html">Hire Me</a>
+          <a class="btn" href="about.html">Let's Talk</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const file = (
+        location.pathname.split("/").pop() || "15html.html"
+      ).toLowerCase();
+      document.querySelectorAll(".navbar a").forEach((a) => {
+        if (a.getAttribute("href").toLowerCase() === file) {
+          a.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

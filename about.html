@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="15html.html" class="logo">Portfolio.</a>
+      <nav class="navbar">
+        <a href="15html.html">Home</a>
+        <a href="skil.html">Skills</a>
+        <a href="achi.html">Achievements</a>
+        <a href="about.html">About</a>
+        <a href="conta.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="page about">
+      <h1>About Me</h1>
+      <div class="circle-img">
+        <!-- Replace with your photo -->
+        <img src="C:\\Users\\goudp\\Downloads\\i9.jpg" alt="Arjun" />
+      </div>
+      <p>
+        Hi, I'm Arjun — an aspiring Full Stack Developer passionate about
+        creating dynamic web applications using MERN, Java, and Python. My goal
+        is to deliver impactful solutions and grow into a top developer.
+      </p>
+    </section>
+
+    <script>
+      const file = (
+        location.pathname.split("/").pop() || "15html.html"
+      ).toLowerCase();
+      document.querySelectorAll(".navbar a").forEach((a) => {
+        if (a.getAttribute("href").toLowerCase() === file) {
+          a.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

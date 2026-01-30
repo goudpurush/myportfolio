@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achievements</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="15html.html" class="logo">Portfolio.</a>
+      <nav class="navbar">
+        <a href="15html.html">Home</a>
+        <a href="skil.html">Skills</a>
+        <a href="achi.html">Achievements</a>
+        <a href="about.html">About</a>
+        <a href="conta.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="page achievements">
+      <h1>My Achievements</h1>
+      <div class="ach-grid">
+        <!-- Card 1 -->
+        <div class="ach-card">
+          <div class="ach-img">
+            <!-- Replace with your certificate image -->
+            <img src="images/cert-ms-office.png" alt="MS Office Certificate" />
+          </div>
+          <div class="ach-text">
+            Professional certification in Microsoft Office & Computer
+            Applications
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="ach-card">
+          <div class="ach-img">
+            <!-- Replace with your IoT certificate image -->
+            <img
+              src="C:\\Users\\goudp\\Downloads\\i7.png"
+              alt="IoT Certificate"
+            />
+          </div>
+          <div class="ach-text">Certification in Internet of Things (IoT)</div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const file = (
+        location.pathname.split("/").pop() || "15html.html"
+      ).toLowerCase();
+      document.querySelectorAll(".navbar a").forEach((a) => {
+        if (a.getAttribute("href").toLowerCase() === file) {
+          a.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="15html.html" class="logo">Portfolio.</a>
+      <nav class="navbar">
+        <a href="15html.html">Home</a>
+        <a href="skil.html">Skills</a>
+        <a href="achi.html">Achievements</a>
+        <a href="about.html">About</a>
+        <a href="conta.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="page contact">
+      <h1>Contact Me</h1>
+      <div class="contact-list">
+        <a
+          class="contact-item"
+          href="mailto:aarjun6377@gmail.com"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bx bx-envelope"></i><span>aarjun6377@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+919390613723">
+          <i class="bx bx-phone"></i><span>+91 93906 13723</span>
+        </a>
+        <a
+          class="contact-item"
+          href="https://www.linkedin.com/in/arjun888"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bx bxl-linkedin"></i
+          ><span>www.linkedin.com/in/arjun888</span>
+        </a>
+        <a
+          class="contact-item"
+          href="https://github.com/Arjun369888"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bx bxl-github"></i><span>github.com/Arjun369888</span>
+        </a>
+      </div>
+    </section>
+
+    <script>
+      const file = (
+        location.pathname.split("/").pop() || "15html.html"
+      ).toLowerCase();
+      document.querySelectorAll(".navbar a").forEach((a) => {
+        if (a.getAttribute("href").toLowerCase() === file) {
+          a.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
